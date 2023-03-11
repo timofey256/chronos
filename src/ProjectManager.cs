@@ -1,12 +1,17 @@
-class TaskManager
+namespace Chronos
 {
-    public bool AddTask(Task NewTask)
+
+class ProjectManager
+{
+    private List<Project> _projects = new List<Project>();
+
+    public bool AddTask(Task NewTask, string ProjectName)
     {
         Console.WriteLine("Added a new task!");
         return true;
     }
 
-    public bool RemoveTask(string Name) 
+    public bool RemoveTask(string Name, string ProjectName) 
     {
         return true;
     }
@@ -21,4 +26,6 @@ class TaskManager
     {
         return true;
     }
+}
+
 }
